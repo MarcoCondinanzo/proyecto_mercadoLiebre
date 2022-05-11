@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
-const port= process.env.PORT | 3000; 
+const port= process.env.PORT || 3000; 
 
 app.listen( port , () => {
     console.log('Servidor funcionando');
